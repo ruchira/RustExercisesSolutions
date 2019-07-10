@@ -13,10 +13,11 @@ fn get_first_character(word: &str) -> Option<char> {
 }
     
 fn main() {
+    let mut text = String::new();
     loop {
+        text.clear();
         println!("Please input some text.");
 
-        let mut text = String::new();
 
         io::stdin().read_line(&mut text)
             .expect("Failed to read line");
